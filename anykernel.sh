@@ -59,6 +59,9 @@ else
 fi
 #end checker android version
 
+# activate kernelsu by boot cmdline
+patch_cmdline kernelsu.enabled kernelsu.enabled=1
+
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
 
