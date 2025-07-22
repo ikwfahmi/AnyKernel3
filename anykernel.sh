@@ -5,16 +5,16 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-do.devicecheck=0
+kernel.string=Kiriyama @ rsuntkOrgs
+do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
-device.name2=
-device.name3=
-device.name4=
+device.name1=X00TD
+device.name2=X00TDA
+device.name3=ASUS_X00TD
+device.name4=ASUS_X00TDA
 device.name5=
 supported.versions=
 supported.patchlevels=
@@ -30,7 +30,7 @@ set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
 # boot shell variables
-BLOCK=
+BLOCK=/dev/block/bootdevice/by-name/boot;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
