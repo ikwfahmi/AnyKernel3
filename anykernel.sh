@@ -5,18 +5,18 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Kiriyama @ rsuntkOrgs
+kernel.string=Kyura @ KyuraProject kernel v4.19
 do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=X00TD
-device.name2=X00TDA
-device.name3=ASUS_X00TD
-device.name4=ASUS_X00TDA
-device.name5=
-supported.versions=
+device.name2=ASUS_X00TD
+device.name3=WW_X00TD
+device.name4=X00T
+device.name5=WW_X00T
+supported.versions=11-15
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
@@ -30,7 +30,7 @@ set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
 # boot shell variables
-BLOCK=/dev/block/bootdevice/by-name/boot;
+BLOCK=/dev/block/platform/soc/c0c4000.sdhci/by-name/boot;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
