@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=SkyWalker kernel with KernelSU supported
+kernel.string=Kyura @ KyuraProject kernel v4.4
 do.devicecheck=1
 do.modules=0
 do.systemless=1
